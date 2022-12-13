@@ -1,0 +1,47 @@
+<html onmousedown="return false;" style="background-color:rgb(189, 247, 250);position:fixed;">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            var game={};
+            game.math=1;
+            var way={};
+            var tree={};
+            function creatGameWay(src,x,y,w,t){
+                document.getElementById("game").innerHTML=document.getElementById("game").innerHTML+"<img src='"+src+"' style='"+"position:fixed;left:"+x+";top:"+y+";z-index:"+t+";' width='"+w+"'>";
+            }
+                
+           function creatGameTree2(x,y,s,c,t){  
+            if(game.math=1){
+          document.getElementById("game").innerHTML=document.getElementById("game").innerHTML+"<img src='tree2-1.svg' style='position:absolute;top:"+y+";left:"+x+";background-color:"+c+";z-index:"+t+";'"+" width='"+s+"'>";
+            }            
+           }
+           function creatGameTree3(x,y,s,c,t){  
+            if(game.math=1){
+          document.getElementById("game").innerHTML=document.getElementById("game").innerHTML+"<img src='tree2-3.svg' style='position:absolute;top:"+y+";left:"+x+";background-color:"+c+";z-index:"+t+";'"+" width='"+s+"'>";
+            }            
+           }
+
+           function creatGameRect(x,y,w,h,c){
+            document.write("<div style='position:fixed;left:"+x+";top:"+y+";width:"+w+";height:"+h+";background-color:"+c+";'></div>");
+           }
+           function wait(a){
+setTimeout(waitThings,a*1000);
+}
+        </script>
+        <script>
+            document.write("<span id='game'>");
+            document.write("<span style='font-size:30px;color:black;'>冬天</span>");
+            creatGameTree2("30em","25em",50,"",2);
+            creatGameTree2("40em","15em",50,"",2);
+            creatGameTree2("35em","4em",50,"",3);
+            /*creatGameTree2("20em","0em",200,"",4);*/
+            creatGameTree3("35em","12em",50,"",2);
+            creatGameWay("2-1.svg","20em","0em",400,3);
+            document.write("</span>");
+        </script>
+        <div style="width:200px;height:570px;background-color:black;"></div>
+        <div style="width:200px;height:750px;background-color:black;position:absolute;left:50em;top:-10em;"></div>
+    </body>
+</html>

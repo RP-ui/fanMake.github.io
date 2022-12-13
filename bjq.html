@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <span id="text" style="font-size:50px;border:solid;">
+
+        </span>
+        <br>
+        <br>
+        <br>
+        <br>
+        <textarea id="by">
+
+        </textarea>
+        <script>
+            a=65; b=66; c=67; d=68; e=69; f=70; g=71; h=72; i=73; j=74; k=75; l=76; m=77; n=78; o=79; p=80; q=81; r=82; s=83; t=84; u=85; v=86; w=87; x=88; y=89; z=90; n1=97; N2=98; N0=96; N3=99; N4=100; N5=101; N6=102; N7=103; N8=104; N9=105; star=106; Plus=107; Enter=108; unPlus=109; dot=110; slash=111; F1=112; F2=113; F3=114; F4=115; F5=116; F6=117; F7=118; F8=119; F9=120; F10=121; F11=122; F12=123;
+            function ddd(){
+                if(event.keyCode==a){
+                    document.getElementById("text").innerHTML=document.getElementById("text").innerHTML+"<img src='tree3.svg' width='20'>";
+                    document.getElementById("by").value=document.getElementById("by").value+"creatGameTree";
+                }
+                if(event.keyCode==s){
+                    document.getElementById("text").innerHTML=document.getElementById("text").innerHTML+"<span style='color:lightgreen;'>(</span>";
+                    document.getElementById("by").value=document.getElementById("by").value+"(";
+                }
+                if(event.keyCode==d){
+                    document.getElementById("text").innerHTML=document.getElementById("text").innerHTML+"<span style='color:lightgreen;'>)</span>";
+                    document.getElementById("by").value=document.getElementById("by").value+")";
+                }
+                if(event.keyCode==c){
+                    document.getElementById("text").innerHTML=document.getElementById("text").innerHTML+"<br>";
+                    document.getElementById("by").value=document.getElementById("by").value+"";
+                }
+                if(event.keyCode==x){
+                    document.getElementById("text").innerHTML=document.getElementById("text").innerHTML+"<span style='color:lightblue;'>zhb:</span>";
+                    document.getElementById("by").value=document.getElementById("by").value+"";
+                }
+                if(event.keyCode==y){
+                    document.getElementById("text").innerHTML=document.getElementById("text").innerHTML+"<span style='color:lightblue;'>shb:</span>";
+                    document.getElementById("by").value=document.getElementById("by").value+"";
+                }
+                if(event.keyCode==l){
+                    document.getElementById("text").innerHTML=document.getElementById("text").innerHTML+"<span style='color:darkblue;'>,</span>";
+                    document.getElementById("by").value=document.getElementById("by").value+",";
+                }
+                if(event.keyCode==e){
+                    document.getElementById("text").innerHTML=document.getElementById("text").innerHTML+"<span style='color:pink;'>--</span>";
+                    document.getElementById("by").value=document.getElementById("by").value+";";
+                }
+                if(event.keyCode==o){
+                    document.getElementById("text").innerHTML=document.getElementById("text").innerHTML+" ";
+                    document.getElementById("by").value=document.getElementById("by").value+" ";
+                }
+                if(event.keyCode==j){
+                    document.getElementById("text").innerHTML=document.getElementById("text").innerHTML+"<span style='color:red;'>{|}</span>";
+                }
+                if(event.keyCode==z){
+                    document.getElementById("text").innerHTML=document.getElementById("text").innerHTML+"<span style='color:green;'><<<</span>";
+                    document.getElementById("by").value=document.getElementById("by").value+"/*";
+                }
+                if(event.keyCode==v){
+                    document.getElementById("text").innerHTML=document.getElementById("text").innerHTML+"<span style='color:green;'>>>></span>";
+                    document.getElementById("by").value=document.getElementById("by").value+"*/";
+                }
+                if(event.keyCode==97){
+                    document.getElementById("text").innerHTML=document.getElementById("text").innerHTML+"<span style='color:green;'>1</span>";
+                    document.getElementById("by").value=document.getElementById("by").value+"1";
+                }
+            }
+
+            document.onkeydown=ddd;
+        </script>
+    </body>
+</html>
